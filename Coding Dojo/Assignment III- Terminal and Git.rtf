@@ -1,0 +1,111 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red180\green36\blue25;\red47\green180\blue29;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 Last login: Wed Oct 21 23:20:47 on ttys000\
+Jessicas-MacBook-Pro:~ jessicapeng$ cd\
+Jessicas-MacBook-Pro:~ jessicapeng$ cd Desktop\
+Jessicas-MacBook-Pro:Desktop jessicapeng$ mkdir branching_merging\
+Jessicas-MacBook-Pro:Desktop jessicapeng$ cd branching_merging\
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ git init\
+  \
+Initialized empty Git repository in /Users/jessicapeng/Desktop/branching_merging/.git/\
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ \
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ touch index.html\
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ git status\
+On branch master\
+\
+Initial commit\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf2 index.html\cf0 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ git add .\
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ git commit -m "initial commit"\
+[master (root-commit) e00c758] initial commit\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 index.html\
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ git branch\
+* \cf3 master\cf0 \
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ git checkout -b "add-css"\
+Switched to a new branch 'add-css'\
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ touch style.css\
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ git status\
+On branch add-css\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf2 style.css\cf0 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ git add .\
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ git commit -m "add-css"\
+[add-css 27a3dc3] add-css\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 style.css\
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ git checkout \
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ git merge add-css\
+Already up-to-date.\
+Jessicas-MacBook-Pro:branching_merging jessicapeng$ \
+\
+
+\f1\b INDEX. HTML 
+\f0\b0 \
+<!DOCTYPE html>\
+<html>\
+<head>\
+	<link rel='stylesheet' href='style.css'/>\
+	<script src='script.js'></script>\
+</head>\
+<body>\
+<h1> Coding Dojo Rocks! </h1> \
+<br> \
+<p> adlfjadfja;dfhaldfhaldfhladhfladhflahdlfhadl\
+<br> fasdlfhaldfhaldfhladfkadkfhaldkfhla;hfla;dshfl;adshflahdsf;hadkslfhk <br>\
+adshfkadhfkahdfklhadlkfhalkdsfhl;adhf;ladhsfl;adshf\
+<br>\
+;aldshfalkdsfhlakdshflkasdhfl;askdhf;ladksfhfadfjdshf;ladskhf;alsdkf </p> \
+<br>\
+<img src= "http://cdn.resimkoy.net/2015/08/28/download-here-puppy-cute-dog-breeds.jpg"</>\
+<br>\
+<img id="second" src="https://s-media-cache-ak0.pinimg.com/236x/4e/7c/fc/4e7cfc0d2ce3955d56dce2a24a16f369.jpg" </>\
+<br>\
+<img src="http://awaytogarden.com/wp-content/uploads/2011/01/paws-in-snow.jpg"</>\
+<br>\
+<img id="fourth" src="http://cdn.skim.gs/images/7767ea1ded841d353262/meet-the-bernese-moutain-dog-breed-bernese-mountain-dog-26"</>\
+</body>\
+</html>\
+\
+
+\f1\b STYLE.CSS
+\f0\b0 \
+body \{\
+    width:500px;\
+    height:1000px;\
+    background-color:black;\
+    color:white;\
+\}\
+\
+img \{\
+    border:2px solid white;\
+    display: inline-block;\
+    clear:both;\
+    vertical-align:top;\
+    margin-top:10px;\
+    \
+\}\
+\
+#second \{\
+    margin-left:510px;\
+    margin-top:-473px;\
+\}\
+\
+#fourth \{\
+    margin-left:650px;\
+    margin-top:-430px;\
+\}}
